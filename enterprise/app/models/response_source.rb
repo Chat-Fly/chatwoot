@@ -14,7 +14,8 @@
 #
 # Indexes
 #
-#  index_response_sources_on_source_model  (source_model_type,source_model_id)
+#  index_response_sources_on_account_id                             (account_id)
+#  index_response_sources_on_source_model_type_and_source_model_id  (source_model_type,source_model_id)
 #
 class ResponseSource < ApplicationRecord
   enum source_type: { external: 0, kbase: 1, inbox: 2 }

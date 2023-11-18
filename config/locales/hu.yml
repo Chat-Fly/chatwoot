@@ -184,6 +184,9 @@ hu:
     openai:
       name: "OpenAI"
       description: "Használj OpenAI GPT modelleket mesterséges intelligencia alapú megoldások integrálására."
+    chatfly:
+      name: "ChatFly"
+      description: "Integrate powerful AI features into ChatFly."
   public_portal:
     search:
       search_placeholder: Keress a bejegyzések címében és tartalmában...

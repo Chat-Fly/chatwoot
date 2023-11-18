@@ -18,7 +18,7 @@ json.ui_settings resource.ui_settings
 json.uid resource.uid
 json.type resource.type
 json.accounts do
-  json.array! resource.account_users do |account_user|
+  json.array! resource.account_users.includes(:account) do |account_user|
     json.id account_user.account_id
     json.name account_user.account.name
     json.status account_user.account.status

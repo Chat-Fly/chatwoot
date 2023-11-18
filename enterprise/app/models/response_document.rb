@@ -14,8 +14,8 @@
 #
 # Indexes
 #
-#  index_response_documents_on_document            (document_type,document_id)
-#  index_response_documents_on_response_source_id  (response_source_id)
+#  index_response_documents_on_document_type_and_document_id  (document_type,document_id)
+#  index_response_documents_on_response_source_id             (response_source_id)
 #
 class ResponseDocument < ApplicationRecord
   has_many :responses, dependent: :destroy_async

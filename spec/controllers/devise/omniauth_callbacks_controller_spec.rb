@@ -52,7 +52,7 @@ RSpec.describe 'DeviseOverrides::OmniauthCallbacksController', type: :request do
         follow_redirect!
 
         # expect a 302 redirect to app/login with error disallowing personal accounts
-        expect(response).to redirect_to(%r{/app/login\?error=business-account-only$})
+        expect(response).to redirect_to(%r{/app/login\?error=business-account-only$}, allow_other_host: true)
       end
     end
 

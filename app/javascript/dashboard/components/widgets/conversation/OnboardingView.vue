@@ -17,7 +17,7 @@
               })
             }}
           </p>
-          <p v-if="globalConfig.installationName === 'Chatwoot'">
+          <p v-if="globalConfig.installationName === 'ChatFly'">
             <a
               href="https://www.chatwoot.com/changelog"
               target="_blank"
@@ -128,6 +128,7 @@ export default {
 }
 
 .page-title {
+  color: white !important;
   font-size: var(--font-size-big);
   font-weight: var(--font-weight-bold);
   margin-bottom: var(--space-one);

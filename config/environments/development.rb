@@ -76,4 +76,13 @@ Rails.application.configure do
     Bullet.bullet_logger = true
     Bullet.rails_logger = true
   end
+
+  config.middleware.use ExceptionNotification::Rack,
+  slack: {
+    webhook_url: ENV.fetch('SLACK_WEBHOOK_URL', nil),
+    channel: ENV.fetch('SLACK_CHANNEL_NAME', nil),
+    additional_parameters: {
+      mrkdwn: true
+    }
+  }
 end

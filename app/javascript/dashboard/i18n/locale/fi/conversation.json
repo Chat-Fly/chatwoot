@@ -270,17 +270,17 @@
   "CONVERSATION_CUSTOM_ATTRIBUTES": {
     "ADD_BUTTON_TEXT": "Create attribute",
     "UPDATE": {
-      "SUCCESS": "Tunniste päivitetty onnistuneesti",
-      "ERROR": "Attribuuttia ei voida päivittää. Yritä myöhemmin uudelleen"
+      "SUCCESS": "Attribute updated successfully",
+      "ERROR": "Unable to update attribute. Please try again later"
     },
     "ADD": {
       "TITLE": "Add",
-      "SUCCESS": "Attribuutin lisäys onnistui",
-      "ERROR": "Attribuuttia ei voitu lisätä. Yritä myöhemmin uudelleen"
+      "SUCCESS": "Attribute added successfully",
+      "ERROR": "Unable to add attribute. Please try again later"
     },
     "DELETE": {
-      "SUCCESS": "Attribuutin poisto onnistui",
-      "ERROR": "Attribuuttia ei voida poistaa. Yritä uudelleen myöhemmin"
+      "SUCCESS": "Attribute deleted successfully",
+      "ERROR": "Unable to delete attribute. Please try again later"
     },
     "ATTRIBUTE_SELECT": {
       "TITLE": "Lisää määritteitä",

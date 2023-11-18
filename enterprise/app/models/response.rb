@@ -4,9 +4,10 @@
 #
 #  id                   :bigint           not null, primary key
 #  answer               :text             not null
-#  embedding            :vector(1536)
+#  embedding            :string
 #  question             :string           not null
 #  status               :integer          default("pending")
+#  vector               :string
 #  created_at           :datetime         not null
 #  updated_at           :datetime         not null
 #  account_id           :bigint           not null
@@ -15,8 +16,15 @@
 #
 # Indexes
 #
-#  index_responses_on_embedding             (embedding) USING ivfflat
+#  index_responses_on_account_id            (account_id)
+#  index_responses_on_embedding             (embedding)
 #  index_responses_on_response_document_id  (response_document_id)
+#  index_responses_on_response_source_id    (response_source_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (account_id => accounts.id)
+#  fk_rails_...  (response_source_id => response_sources.id)
 #
 class Response < ApplicationRecord
   belongs_to :response_document, optional: true

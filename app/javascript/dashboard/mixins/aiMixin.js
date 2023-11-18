@@ -17,7 +17,7 @@ export default {
     }),
     aiIntegration() {
       return this.appIntegrations.find(
-        integration => integration.id === 'openai' && !!integration.hooks.length
+        integration => integration.id === 'chatfly' && !!integration.hooks.length
       )?.hooks[0];
     },
     isAIIntegrationEnabled() {

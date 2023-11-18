@@ -45,8 +45,8 @@
         "DESELECT": "Deselect label",
         "DISMISS": "Dismiss suggestion"
       },
-      "POWERED_BY": "Chatwoot AI",
-      "DISMISS": "نادیده بگیر",
+      "POWERED_BY": "ChatFly AI",
+      "DISMISS": "Dismiss",
       "ADD_SELECTED_LABELS": "Add selected labels",
       "ADD_SELECTED_LABEL": "Add selected label",
       "ADD_ALL_LABELS": "Add all labels"

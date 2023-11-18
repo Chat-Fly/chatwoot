@@ -51,7 +51,7 @@
     "UPDATE_CHATWOOT": "Chatwoot 有可用更新%{latestChatwootVersion}，请更新您的应用。",
     "LEARN_MORE": "了解更多",
     "PAYMENT_PENDING": "您的付款尚未完成。请更新您的付款信息以继续使用Chatwoot",
-    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using Chatwoot",
+    "LIMITS_UPGRADE": "Your account has exceeded the usage limits, please upgrade your plan to continue using ChatFly",
     "OPEN_BILLING": "Open billing"
   },
   "FORMS": {

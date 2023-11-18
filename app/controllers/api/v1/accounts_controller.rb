@@ -30,6 +30,7 @@ class Api::V1::AccountsController < Api::BaseController
     ).perform
     if @user
       send_auth_headers(@user)
+      Account::SignupChatflyJob.perform_now(@user, @account)
       render 'api/v1/accounts/create', format: :json, locals: { resource: @user }
     else
       render_error_response(CustomExceptions::Account::SignupFailed.new({}))

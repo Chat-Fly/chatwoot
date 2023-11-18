@@ -184,6 +184,9 @@ pt:
     openai:
       name: "OpenAI"
       description: "Integre os poderosos recursos de IA com o Chatwoot utilizando os modelos GPT do OpenAI."
+    chatfly:
+      name: "ChatFly"
+      description: "Integrate powerful AI features into ChatFly."
   public_portal:
     search:
       search_placeholder: Pesquisar artigo por título ou corpo...

@@ -18,7 +18,7 @@ ENV NODE_OPTIONS ${NODE_OPTIONS}
 
 ENV BUNDLE_PATH="/gems"
 
-RUN apk update && apk add --no-cache \
+RUN apk update && apk add \
   openssl \
   tar \
   build-base \
@@ -39,7 +39,7 @@ COPY Gemfile Gemfile.lock ./
 # https://github.com/googleapis/google-cloud-ruby/issues/13306
 # adding xz as nokogiri was failing to build libxml
 # https://github.com/chatwoot/chatwoot/issues/4045
-RUN apk update && apk add --no-cache build-base musl ruby-full ruby-dev gcc make musl-dev openssl openssl-dev g++ linux-headers xz vips
+RUN apk update && apk add build-base musl ruby-full ruby-dev gcc make musl-dev openssl openssl-dev g++ linux-headers xz vips
 RUN bundle config set --local force_ruby_platform true
 
 # Do not install development or test gems in production
@@ -93,7 +93,7 @@ ARG RAILS_ENV=production
 ENV RAILS_ENV ${RAILS_ENV}
 ENV BUNDLE_PATH="/gems"
 
-RUN apk update && apk add --no-cache \
+RUN apk update && apk add \
   build-base \
   openssl \
   tzdata \
@@ -104,7 +104,7 @@ RUN apk update && apk add --no-cache \
   && gem install bundler
 
 RUN if [ "$RAILS_ENV" != "production" ]; then \
-  apk add --no-cache nodejs yarn; \
+  apk add nodejs yarn; \
   fi
 
 COPY --from=pre-builder /gems/ /gems/

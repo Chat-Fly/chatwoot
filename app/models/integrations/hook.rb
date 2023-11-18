@@ -4,6 +4,7 @@
 #
 #  id           :bigint           not null, primary key
 #  access_token :string
+#  auto_reply   :boolean          default(FALSE), not null
 #  hook_type    :integer          default("account")
 #  settings     :jsonb
 #  status       :integer          default("enabled")
@@ -55,6 +56,8 @@ class Integrations::Hook < ApplicationRecord
     case app_id
     when 'openai'
       Integrations::Openai::ProcessorService.new(hook: self, event: event).perform if app_id == 'openai'
+    when 'chatfly'
+      Integrations::Chatfly::ProcessorService.new(hook: self, event: event).perform if app_id == 'chatfly'
     else
       'No processor found'
     end

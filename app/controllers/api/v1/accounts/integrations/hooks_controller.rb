@@ -7,7 +7,7 @@ class Api::V1::Accounts::Integrations::HooksController < Api::V1::Accounts::Base
   end
 
   def update
-    @hook.update!(permitted_params.slice(:status, :settings))
+    @hook.update!(permitted_params.slice(:status, :settings, :auto_reply))
   end
 
   def process_event
@@ -30,6 +30,6 @@ class Api::V1::Accounts::Integrations::HooksController < Api::V1::Accounts::Base
   end
 
   def permitted_params
-    params.require(:hook).permit(:app_id, :inbox_id, :status, settings: {})
+    params.require(:hook).permit(:app_id, :inbox_id, :status, :auto_reply, settings: {})
   end
 end

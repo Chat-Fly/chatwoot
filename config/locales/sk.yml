@@ -184,6 +184,9 @@ sk:
     openai:
       name: "OpenAI"
       description: "Integrate powerful AI features into Chatwoot by leveraging the GPT models from OpenAI."
+    chatfly:
+      name: "ChatFly"
+      description: "Integrate powerful AI features into ChatFly."
   public_portal:
     search:
       search_placeholder: Search for article by title or body...

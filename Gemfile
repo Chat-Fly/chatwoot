@@ -92,6 +92,8 @@ gem 'twitty', '~> 0.1.5'
 # facebook client
 gem 'koala'
 # slack client
+gem 'slack-notifier', '~> 2.4'
+gem 'exception_notification', '~> 4.5'
 gem 'slack-ruby-client', '~> 2.2.0'
 # for dialogflow integrations
 gem 'google-cloud-dialogflow-v2'

@@ -5981,6 +5981,10 @@
           "type": "string",
           "description": "Inbox ID if its an Inbox integration"
         },
+        "auto_reply": {
+          "type": "boolean",
+          "description": "Change auto or manual reply chatfly"
+        },
         "account_id": {
           "type": "string",
           "description": "Account ID of the integration"
@@ -6478,6 +6482,10 @@
     "integrations_hook_update_payload": {
       "type": "object",
       "properties": {
+        "auto_reply": {
+          "type": "boolean",
+          "description": "Change auto or manual reply chatfly"
+        },
         "settings": {
           "type": "object",
           "description": "The settings required by the integration"

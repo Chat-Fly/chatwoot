@@ -184,6 +184,9 @@ lt:
     openai:
       name: "OpenAI"
       description: "Integruokite galingas AI funkcijas į Chatwoot, naudodamiesi OpenAI GPT modeliais."
+    chatfly:
+      name: "ChatFly"
+      description: "Integrate powerful AI features into ChatFly."
   public_portal:
     search:
       search_placeholder: Ieškokite straipsnio pagal pavadinimą arba turinį...

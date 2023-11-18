@@ -103,4 +103,14 @@ Rails.application.configure do
   config.action_mailbox.ingress = ENV.fetch('RAILS_INBOUND_EMAIL_SERVICE', 'relay').to_sym
 
   Rails.application.routes.default_url_options = { host: ENV['FRONTEND_URL'] }
+
+  # notification error messages
+  config.middleware.use ExceptionNotification::Rack,
+  slack: {
+    webhook_url: ENV.fetch('SLACK_WEBHOOK_URL', nil),
+    channel: ENV.fetch('SLACK_CHANNEL_NAME', nil),
+    additional_parameters: {
+      mrkdwn: true
+    }
+  }
 end

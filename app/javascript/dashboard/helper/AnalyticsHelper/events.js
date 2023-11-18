@@ -3,7 +3,6 @@ export const CONVERSATION_EVENTS = Object.freeze({
   SENT_MESSAGE: 'Sent a message',
   SENT_PRIVATE_NOTE: 'Sent a private note',
   INSERTED_A_CANNED_RESPONSE: 'Inserted a canned response',
-  TRANSLATE_A_MESSAGE: 'Translated a message',
   INSERTED_A_VARIABLE: 'Inserted a variable',
   USED_MENTIONS: 'Used mentions',
   SEARCH_CONVERSATION: 'Searched conversations',
@@ -96,6 +95,10 @@ export const OPEN_AI_EVENTS = Object.freeze({
   ADDED_AI_INTEGRATION_VIA_CTA_BUTTON:
     'OpenAI: Added AI integration via CTA button',
   DISMISS_AI_SUGGESTION: 'OpenAI: Dismiss AI suggestions',
+});
+
+export const CHATFLY_EVENT = Object.freeze({
+  REPLY_SUGGESTION: 'Chatfly: Used reply suggestion',
 });
 
 export const GENERAL_EVENTS = Object.freeze({

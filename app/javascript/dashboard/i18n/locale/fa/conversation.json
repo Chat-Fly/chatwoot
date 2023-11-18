@@ -1,7 +1,7 @@
 {
   "CONVERSATION": {
     "SELECT_A_CONVERSATION": "لطفا یک گفتگو را از پنجره گفتگوها انتخاب کنید",
-    "CSAT_REPLY_MESSAGE": "لطفاً به گفتگو امتیاز دهید",
+    "CSAT_REPLY_MESSAGE": "لطفاً به مکالمه امتیاز دهید",
     "404": "با عرض پوزش، ما نمی‌توانیم گفتگو را پیدا کنیم. لطفا دوباره تلاش کنید",
     "SWITCH_VIEW_LAYOUT": "تغییر طرح‌بندی",
     "DASHBOARD_APP_TAB_MESSAGES": "پیام‌ها",
@@ -37,7 +37,7 @@
     "REPLYING_TO": "شما در حال پاسخ دادن به:",
     "REMOVE_SELECTION": "حذف انتخاب‌شده‌ها",
     "DOWNLOAD": "دانلود",
-    "UNKNOWN_FILE_TYPE": "فایل ناشناخته",
+    "UNKNOWN_FILE_TYPE": "پرونده ناشناخته",
     "SAVE_CONTACT": "ذخیره",
     "UPLOADING_ATTACHMENTS": "در حال بارگذاری پیوست‌ها...",
     "REPLIED_TO_STORY": "Replied to your story",
@@ -46,7 +46,7 @@
     "NO_RESPONSE": "بدون پاسخ",
     "RATING_TITLE": "رتبه",
     "FEEDBACK_TITLE": "بازخورد",
-    "REPLY_MESSAGE_NOT_FOUND": "پیام در دسترس نیست",
+    "REPLY_MESSAGE_NOT_FOUND": "Message not available",
     "CARD": {
       "SHOW_LABELS": "مشاهده کردن برچسب‌ها",
       "HIDE_LABELS": "پنهان کردن برچسب‌ها"
@@ -58,7 +58,7 @@
       "OPEN": "بیشتر",
       "CLOSE": "بستن",
       "DETAILS": "جزئیات",
-      "SNOOZED_UNTIL": "به تعویق افتاده تا",
+      "SNOOZED_UNTIL": "Snoozed until",
       "SNOOZED_UNTIL_TOMORROW": "تا فردا به تعویق افتاد",
       "SNOOZED_UNTIL_NEXT_WEEK": "تا هفته آینده به تعویق افتاد",
       "SNOOZED_UNTIL_NEXT_REPLY": "تا پاسخ بعدی به تعویق افتاد"
@@ -76,23 +76,23 @@
     "CUSTOM_SNOOZE": {
       "TITLE": "به تعویق انداختن تا",
       "APPLY": "به تعویق انداختن",
-      "CANCEL": "لغو"
+      "CANCEL": "انصراف"
     },
     "PRIORITY": {
       "TITLE": "اولویت",
       "OPTIONS": {
         "NONE": "هیچکدام",
         "URGENT": "Urgent",
-        "HIGH": "بالا",
-        "MEDIUM": "متوسط",
-        "LOW": "پایین"
+        "HIGH": "High",
+        "MEDIUM": "Medium",
+        "LOW": "Low"
       },
       "CHANGE_PRIORITY": {
         "SELECT_PLACEHOLDER": "هیچکدام",
-        "INPUT_PLACEHOLDER": "انتخاب اولویت",
+        "INPUT_PLACEHOLDER": "Select priority",
         "NO_RESULTS": "نتیجه‌ای یافت نشد",
-        "SUCCESSFUL": "تغییر اولویت گفتگوی با شناسه %{conversationId} به %{priority}",
-        "FAILED": "تغییر اولویت گفتگو با موفقیت انجام نشد. لطفا دوباره تلاش نمایید."
+        "SUCCESSFUL": "Changed priority of conversation id %{conversationId} to %{priority}",
+        "FAILED": "Couldn't change priority. Please try again."
       }
     },
     "CARD_CONTEXT_MENU": {
@@ -139,8 +139,8 @@
       "PRIVATE_NOTE": "یادداشت خصوصی",
       "SEND": "ارسال",
       "CREATE": "افزودن یادداشت",
-      "DISMISS_REPLY": "رد پاسخ",
-      "REPLYING_TO": "در حال پاسخ دهی به:",
+      "DISMISS_REPLY": "Dismiss reply",
+      "REPLYING_TO": "Replying to:",
       "TIP_FORMAT_ICON": "نمایش ویرایشگر متنی پیشرفته",
       "TIP_EMOJI_ICON": "انتخاب ایموجی",
       "TIP_ATTACH_ICON": "ضمیمه فایل",
@@ -152,10 +152,10 @@
       "STOP_AUDIO_RECORDING": "در حال توقف ضبط صدا",
       "": "",
       "EMAIL_HEAD": {
-        "TO": "به",
-        "ADD_BCC": "افزودن رونوشت",
+        "TO": "TO",
+        "ADD_BCC": "افزودن bcc",
         "CC": {
-          "LABEL": "رونوشت",
+          "LABEL": "CC",
           "PLACEHOLDER": "ایمیل‌ها با کاما از هم جدا می‌شوند",
           "ERROR": "لطفا آدرس‌ ایمیل معتبر وارد کنید"
         },
@@ -195,7 +195,7 @@
     },
     "CONTEXT_MENU": {
       "COPY": "کپی",
-      "REPLY_TO": "پاسخ به این پیام",
+      "REPLY_TO": "Reply to this message",
       "DELETE": "حذف",
       "CREATE_A_CANNED_RESPONSE": "اضافه کردن به پاسخ‌های آماده",
       "TRANSLATE": "ترجمه",
@@ -296,7 +296,7 @@
     "SUBJECT": "موضوع"
   },
   "CONVERSATION_PARTICIPANTS": {
-    "SIDEBAR_MENU_TITLE": "شرکت کنندگان",
+    "SIDEBAR_MENU_TITLE": "شرکت کننده",
     "SIDEBAR_TITLE": "شرکت کنندگان در گفتگو",
     "NO_RECORDS_FOUND": "نتیجه‌ای یافت نشد",
     "ADD_PARTICIPANTS": "شرکت کنندگان را انتخاب کنید",
